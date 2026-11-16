@@ -18,10 +18,10 @@ class MinHeap():  # Мин-куча - массив, где под индексо
         return None
 
     def pop(self):
-        # Просеивание вниз
         root = self.val[0]
         self.val[0] = self.val[-1]
         self.val.pop(-1)
+        # Просеивание вниз
         n = len(self.val)
         node_ind = 0
         ind_swap = 0
